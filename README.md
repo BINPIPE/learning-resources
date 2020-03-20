@@ -1,6 +1,14 @@
 # resources
-Curated List of Learning Materials for DevOps, SRE, Cloud &amp; Engineering Management
 
-Subject |
+Curated List of Learning Resources
 --- |
-[DevOps](https://github.com/devops-circle/resources/blob/master/devops.md)
+[DevOps](https://github.com/BINPIPE/resources/blob/master/devops.md)
+[SRE](https://github.com/BINPIPE/resources/blob/master/sre.md)
+[Cloud](https://github.com/BINPIPE/resources/blob/master/cloud.md)
+[AI/ML](https://github.com/BINPIPE/resources/blob/master/ai.md)
+[Engineering-Management](https://github.com/BINPIPE/resources/blob/master/management.md)
+[Books](https://github.com/BINPIPE/resources/blob/master/books.md)
+[All-Else!](https://github.com/BINPIPE/resources/blob/master/all-else.md)
+--- |
+
+_Maintained by_ **Prasanjit Singh** - https://www.linkedin.com/in/prasanjit-singh/
