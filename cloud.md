@@ -4,7 +4,7 @@ A curated list of awesome cloud native tools, software, and tutorials.
 
 ### Contents
 
-- Awesome Cloud Native
+- Cloud Native
   - [AI](#ai)
   - [API Gateway](#api-gateway)
   - [Big Data](#big-data)
