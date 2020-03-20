@@ -47,6 +47,7 @@ If you have more time to spend on this topic, here are a few more references tha
 ### Courses
 
 * [Management 101](http://theengineeringmanager.com/management-101/) - talks about your first job as manager, 1-1 with team, when people leave, art of delegation, hiring, etc.
+* [Management in Engineering: Strategy and Leadership] (https://www.edx.org/course/management-in-engineering-ii)
 
 
 ### Further Reading and Reference Material 
