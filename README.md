@@ -1,4 +1,4 @@
-# resources
+# Learning Resources
 
 Curated List of Learning Resources
 --- |
