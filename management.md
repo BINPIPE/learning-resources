@@ -54,3 +54,6 @@ If you have more time to spend on this topic, here are a few more references tha
 * [Advice from Hacker News users: Going from Developer to Manager. What should I know or learn?
 ](https://news.ycombinator.com/item?id=18823616)
 * [Amazon Leadership Pronciples] (https://www.amazon.jobs/en/principles)
+
+
+_Maintained by_ **Prasanjit Singh** - https://www.linkedin.com/in/prasanjit-singh/
