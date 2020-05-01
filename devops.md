@@ -13,6 +13,7 @@ Index
 
 -	[Culture](#culture)
 -	[Process](#process)
+- [Learn DevOps!](https://github.com/prasanjit-/BINPIPE/resources/blob/master/devops-lessons.md)&#x1F34E;
 -	[Technology](#technology)
 -	[Security](#security)
 -	[Tools](#tools)
