@@ -2,6 +2,11 @@ DEVOPS
 ======
 
 A curated list of resources for DevOps
+___
+:ledger: Maintainer: **[Prasanjit Singh](https://www.linkedin.com/in/prasanjit-singh)** | **www.binpipe.org**
+___
+
+
 
 What is DevOps?
 ---------------
