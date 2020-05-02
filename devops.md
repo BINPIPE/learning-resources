@@ -18,7 +18,7 @@ Index
 
 -	[Culture](#culture)
 -	[Process](#process)
-- [Learn DevOps!](https://github.com/BINPIPE/resources/blob/master/devops-lessons.md)&#x1F34E;
+- [Learn DevOps!](https://github.com/BINPIPE/resources/blob/master/devops-lesson-plans.md)&#x1F34E;
 -	[Technology](#technology)
 -	[Security](#security)
 -	[Tools](#tools)
