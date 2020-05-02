@@ -13,4 +13,6 @@ Curated List of Learning Resources
 [Books](https://github.com/BINPIPE/resources/blob/master/books.md)
 [All-Else!](https://github.com/BINPIPE/resources/blob/master/all-else.md)
 
-_Maintained by_ **Prasanjit Singh** - https://www.linkedin.com/in/prasanjit-singh
+::: warning
+_Maintained by:_ **[Prasanjit Singh](https://www.linkedin.com/in/prasanjit-singh)** | **www.binpipe.org**
+:::
