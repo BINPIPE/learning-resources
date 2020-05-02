@@ -3,9 +3,9 @@ LEARN DEVOPS
 
 Simplified resources for learning DevOps methodically.
 
-* [Learning Videos](https://www.youtube.com/channel/UCT-nPlVzJI-ccQXlxjSvJmw)
-* [Learning Notes](#Learning Notes)
-* [Blog](https://binpipe.org)
+- [Learning Videos](https://www.youtube.com/channel/UCT-nPlVzJI-ccQXlxjSvJmw)
+-	[Learning Notes](#Learning Notes)
+- [Blog](https://binpipe.org)
 
 Lesson Plans
 ------------
