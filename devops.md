@@ -152,5 +152,5 @@ Misc
 -	[The Phoenix Project](http://www.amazon.com/Phoenix-Project-DevOps-Helping-Business/dp/0988262509/ref=sr_1_1?ie=UTF8&qid=1451900824&sr=8-1&keywords=project+phoenix) - A Novel about IT, DevOps, and Helping Your Business Win
 - [DevOps'ish](https://devopsish.com/) - A newsletter focused on People, Process, and Tools in the DevOps, Cloud Native, and Open Source spaces.
 ___
-:ledger: Maintainer: **[Prasanjit Singh](https://www.linkedin.com/in/prasanjit-singh)** | **www.binpipe.org**
+**[Prasanjit Singh](https://www.linkedin.com/in/prasanjit-singh)** | **www.binpipe.org**
 ___
