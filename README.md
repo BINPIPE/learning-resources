@@ -4,6 +4,7 @@
 
 `Learning Resources for DevOps, SRE, Cloud & Engineering Management`
 
+[![BINPIPE](https://img.shields.io/badge/YouTube-red.svg)](https://www.youtube.com/channel/UCPTgt4Wo0MAnuzNEEZlk90A)
 
 Curated List of Learning Resources
 --- |
@@ -22,7 +23,7 @@ For self-study resources look around in this repository, <a href="https://binpip
 </pre>
 
 ___
-:ledger: Maintainer: **[Prasanjit Singh](https://www.linkedin.com/in/prasanjit-singh)** | **www.binpipe.org** 
+:ledger: Maintainer: **[Prasanjit Singh](https://www.linkedin.com/in/prasanjit-singh)** | **www.binpipe.org** | [![BINPIPE](https://img.shields.io/badge/YouTube-red.svg)](https://www.youtube.com/channel/UCPTgt4Wo0MAnuzNEEZlk90A)
 ___
 
 
