@@ -151,6 +151,13 @@ Misc
 -	[Sysadvent](http://sysadvent.blogspot.co.uk) - One DevOps/Sysadmin related article for each day of December, ending on the 25th article.
 -	[The Phoenix Project](http://www.amazon.com/Phoenix-Project-DevOps-Helping-Business/dp/0988262509/ref=sr_1_1?ie=UTF8&qid=1451900824&sr=8-1&keywords=project+phoenix) - A Novel about IT, DevOps, and Helping Your Business Win
 - [DevOps'ish](https://devopsish.com/) - A newsletter focused on People, Process, and Tools in the DevOps, Cloud Native, and Open Source spaces.
+
+
+<pre>
+<a href="https://binpipe.org">BINPIPE</a> aims to simplify learning for those who are looking to make a foothold in the industry. 
+Write to me at <b>nixgurus@gmail.com</b> if you are looking for tailor-made training sessions. 
+For self-study resources look around in this repository, <a href="https://binpipe.org">the Binpipe Blog</a> and <a href="https://www.youtube.com/channel/UCPTgt4Wo0MAnuzNEEZlk90A">Youtube Channel</a>.
+</pre>
 ___
 **[Prasanjit Singh](https://www.linkedin.com/in/prasanjit-singh)** | **www.binpipe.org**
 [![BINPIPE](https://img.shields.io/badge/YouTube-red.svg)](https://www.youtube.com/channel/UCPTgt4Wo0MAnuzNEEZlk90A)
