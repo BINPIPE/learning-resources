@@ -59,12 +59,20 @@ Lesson Plans
 * Jenkins
 * Ansible
 * Puppet
+* Terraform
 
 &#x1F4D7; **Containers & Orchestrators**
 * Docker-Compose
 * Docker Swarm
 * Kubernetes
 * Mesos-Marathon
+
+&#x1F4D8; **Cloud Architect**
+
+* AWS Cloud Architect
+* Azure Cloud Architect
+* Oracle Cloud Infrastructure Architect
+* Google Cloud Architect
 
 &#x1F4D9; **Linux Fundamentals & System Administration**
 
