@@ -85,9 +85,9 @@ Lesson Plans
 Notes
 ------------
 
-*  - [WIP](#culture)
-*  - [WIP](#process)
-*  - [WIP](https://binpipe.org)
+*  [WIP](#culture)
+*  [WIP](#process)
+*  [WIP](https://www.binpipe.org/)
 
 <pre>
 <a href="https://binpipe.org">BINPIPE</a> aims to simplify learning for those who are looking to make a foothold in the industry. 
@@ -96,5 +96,5 @@ For self-study resources look around in this repository, <a href="https://binpip
 </pre>
 
 ___
-:ledger: Maintainer: **[Prasanjit Singh](https://www.linkedin.com/in/prasanjit-singh)** | **www.binpipe.org** [![BINPIPE](https://img.shields.io/badge/YouTube-red.svg)](https://www.youtube.com/channel/UCPTgt4Wo0MAnuzNEEZlk90A)
+:ledger: Maintainer: **[Prasanjit Singh](https://www.linkedin.com/in/prasanjit-singh)** | **[www.binpipe.org](https://www.binpipe.org/)** [![BINPIPE](https://img.shields.io/badge/YouTube-red.svg)](https://www.youtube.com/channel/UCPTgt4Wo0MAnuzNEEZlk90A)
 ___
