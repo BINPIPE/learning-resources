@@ -3,7 +3,7 @@ LEARN DEVOPS
 
 Simplified resources for learning DevOps methodically.
 
-- [Learning Videos](https://www.youtube.com/channel/UCPTgt4Wo0MAnuzNEEZlk90A)
+- [Learning Videos](https://www.youtube.com/channel/UCPTgt4Wo0MAnuzNEEZlk90A) [![BINPIPE](https://img.shields.io/badge/YouTube-red.svg)](https://www.youtube.com/channel/UCPTgt4Wo0MAnuzNEEZlk90A)
 -	[Learning Notes](https://github.com/BINPIPE/resources/blob/master/devops-lesson-plans.md)
 - [Blog](https://binpipe.org)
 
@@ -25,5 +25,5 @@ For self-study resources look around in this repository, <a href="https://binpip
 </pre>
 
 ___
-:ledger: Maintainer: **[Prasanjit Singh](https://www.linkedin.com/in/prasanjit-singh)** | **www.binpipe.org** 
+:ledger: Maintainer: **[Prasanjit Singh](https://www.linkedin.com/in/prasanjit-singh)** | **www.binpipe.org** [![BINPIPE](https://img.shields.io/badge/YouTube-red.svg)](https://www.youtube.com/channel/UCPTgt4Wo0MAnuzNEEZlk90A)
 ___
