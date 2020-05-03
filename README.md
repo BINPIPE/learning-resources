@@ -3,6 +3,7 @@
 `Learning Resources for DevOps, SRE, Cloud & Engineering Management`
 
 [![BINPIPE](https://img.shields.io/badge/BINPIPE-YouTube-red)](https://www.youtube.com/channel/UCPTgt4Wo0MAnuzNEEZlk90A)
+[![Learn DevOps!](https://img.shields.io/badge/BINPIPE-Learn--DevOps-orange)](https://github.com/BINPIPE/resources/blob/master/devops-lesson-plans.md)
 
 Curated List of Learning Resources
 --- |
