@@ -4,14 +4,14 @@ LEARN DEVOPS
 Simplified resources for learning DevOps methodically.
 
 - [![BINPIPE](https://img.shields.io/badge/Learning--Videos-red)](https://www.youtube.com/channel/UCPTgt4Wo0MAnuzNEEZlk90A)
--	[![BINPIPE](https://img.shields.io/badge/Learning--Notes-green)](https://github.com/BINPIPE/resources/blob/master/devops-lesson-plans.md)
+-	[![BINPIPE](https://img.shields.io/badge/Learning--Notes-green)](#Notes)
 - [Blog](https://binpipe.org)
 
 Lesson Plans
 ------------
 Work in progress
 
-Learning Notes
+Notes
 ------------
 
 * &#x1F4D7; -	[WIP](#culture)
