@@ -3,7 +3,7 @@ DEVOPS
 
 A curated list of resources for DevOps
 ___
-:ledger: Maintainer: **[Prasanjit Singh](https://www.linkedin.com/in/prasanjit-singh)** | **www.binpipe.org**
+:ledger: Maintainer: **[Prasanjit Singh](https://www.linkedin.com/in/prasanjit-singh)** | **www.binpipe.org**    [![BINPIPE](https://img.shields.io/badge/YouTube-red.svg)](https://www.youtube.com/channel/UCPTgt4Wo0MAnuzNEEZlk90A)
 ___
 
 
@@ -18,7 +18,7 @@ Index
 
 -	[Culture](#culture)
 -	[Process](#process)
-- [Learn DevOps!](https://github.com/BINPIPE/resources/blob/master/devops-lesson-plans.md)&#x1F34E;
+- &#x1F34E; [Learn DevOps!](https://github.com/BINPIPE/resources/blob/master/devops-lesson-plans.md)
 -	[Technology](#technology)
 -	[Security](#security)
 -	[Tools](#tools)
@@ -153,4 +153,5 @@ Misc
 - [DevOps'ish](https://devopsish.com/) - A newsletter focused on People, Process, and Tools in the DevOps, Cloud Native, and Open Source spaces.
 ___
 **[Prasanjit Singh](https://www.linkedin.com/in/prasanjit-singh)** | **www.binpipe.org**
+[![BINPIPE](https://img.shields.io/badge/YouTube-red.svg)](https://www.youtube.com/channel/UCPTgt4Wo0MAnuzNEEZlk90A)
 ___
