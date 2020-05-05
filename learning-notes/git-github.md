@@ -32,6 +32,41 @@ It consists of 4 parts:
     
 All the repository structure is internal to Git and are transparent to developer.
 
+**Common GIT Operations**
+
+**create a new repository**
+create a new directory, open it and perform a
+# git init
+to create a new git repository.
+
+
+**checkout a repository from github**
+create a working copy of a local repository by running the command
+# git clone /path/to/repository
+when using a remote server, your command will be
+# git clone username@host:/path/to/repository
+
+
+
+**add & commit**
+You can propose changes (add it to the Index) using
+`# git add <filename>`
+`# git add *`
+This is the first step in the basic git workflow. To actually commit these changes use
+`# git commit -m "Commit message"`
+Now the file is committed to the HEAD, but not in your remote repository yet.
+
+
+**pushing changes**
+Your changes are now in the HEAD of your local working copy. To send those changes to your remote repository, execute
+`# git push origin master`
+Change master to whatever branch you want to push your changes to.
+
+If you have not cloned an existing repository and want to connect your repository to a remote server, you need to add it with
+`# git remote add origin <server>`
+Now you are able to push your changes to the selected remote server
+
+
 **Some commands which relate to repository structure:**
 ```
 git add
@@ -43,6 +78,55 @@ git commit
 git push
 // transfers project from local to central repository. (requires internet)
 ```
+
+**Code snippet for automation**
+```
+#EAZYGIT
+function eazygit() {
+    git add .
+    git commit -a -m "$1"
+    git push
+}
+```
+**update & merge**
+to update your local repository to the newest commit, execute
+`# git pull`
+in your working directory to fetch and merge remote changes.
+to merge another branch into your active branch (e.g. master), use
+`# git merge <branch>`
+in both cases git tries to auto-merge changes. Unfortunately, this is not always possible and results in conflicts. You are responsible to merge those conflicts manually by editing the files shown by git. After changing, you need to mark them as merged with
+`# git add <filename>`
+before merging changes, you can also preview them by using
+`# git diff <source_branch> <target_branch>`
+
+
+**branching**
+Branches are used to develop features isolated from each other.
+The master branch is the "default" branch when you create a repository.
+Use other branches for development and merge them back to the master branch upon completion.
+
+create a new branch named "feature_x" and switch to it using
+`# git checkout -b feature_x`
+switch back to master
+`# git checkout master`
+and delete the branch again
+`# git branch -d feature_x`
+a branch is not available to others unless you push the branch to your remote repository
+`# git push origin <branch>`
+
+**Another way to branch:**
+
+`git rebase myBranch`
+
+This merges the branch with master in a serial fashion.
+
+Now,
+`git push origin master`
+
+Contributing to open source by : fork a project and do some work (add new features) in your branch and then do a pull request on github.
+
+
+
 **Accessing github central repository via Https or ssh**
 
 Here, transfer project means transfer changes as git is very lightweight and works on changes in project. It internally does the transfer by using Lossless Compression Techniques and transferring compressed files. Https is the default way to access github central repository.
@@ -72,92 +156,8 @@ Now, go to github settings -> new ssh key -> create key
 
 ssh -T git@github.com -> activate ssh key (test connection)
 ```
-Refresh your github Page.
-
-**Working with git – Important Git commands**
-
--   **Git user configuration (First Step)**
-    ```
-    git --version (to check git version)
-    git config --global user.name "your name here"
-    git config --global user.email "your email here"
-    ```
-    These are the information attached to commits.
+Refresh your github Page after doing the above.
     
--   **Initialize directory :**
-    
-    `git init `
-    initializes your directory to work with git and
-    makes a local repository. .git folder is made
-    
-    OR
-    
-    `git clone http_url`
-    This is done if we have an existing git repository.
-    
--   **Connecting to repository :**
-    
-    `git remote add origin http_url/ssh_url`
-    connect to central repo to push/pull
-    
-    pull means transferring the changes on central repository to your local repository. push is the vice versa of pull.
-    
-   `git pull origin master`
-    Always first pull contents from central repo before pushing so that you are updated with other team members work. Here, master means the master branch (in Git).
-    
--   **Steps to add a file to central Repository:**  
-    First your file is in your working directory, Move it to the staging area by typing:
-    
-    `git add -A (for all files and folders)`
-    
-    `git status` : here, untracked files means files which you haven’t added to the staging area. Changes not staged for commit means you have staged the file earlier then you have made changes in that files in your working directory and the changes need to be staged once more.  
-    Changes ready to be committed : these are files which have been committed and ready to be pushed to central repository.
-    
-    `git commit -a -m "message for commit"`
-    -a : commit all files and for files which have been 
-         staged earlier need not to be git add once more
-    -a options does that automatically.
-    
-    `git push origin master` -> pushes your files to 
-                             github master branch
-    `git push origin anyOtherBranch` -> pushes any 
-                          other branch to github.
-    `git log` ; to see all your commits
-    
-    `git checkout commitObject(first 8 bits) file.txt`-> 
-    revert back to this previous commit  for file file.txt
-    
-    commitObject can be seen via git log.
-    HEAD -> pointer to our latest commit.
-    
-
-**Branching in Git**
-
-create branch ->
-`git branch myBranch`
-or
-`git checkout -b myBranch` -> make and switch to the 
-                                  branch myBranch
-
-Do the work in your branch. Then,
-`git checkout master` ; to switch back to master branch
-
-Now,  merge contents with your myBranch By:
-`git merge myBranch` (writing in master branch)
-This merger makes a new commit.
-
-**Another way:**
-
-`git rebase myBranch`
-
-This merges the branch with master in a serial fashion.
-
-Now,
-`git push origin master`
-
-Contributing to open source by : fork a project and do some work (add new features) in your branch and then do a pull request on github.
-
-
 
 <pre>
 <a href="https://www.binpipe.org">BINPIPE</a> aims to simplify learning for those who are looking to make a foothold in the industry. 
