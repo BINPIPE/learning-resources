@@ -28,5 +28,5 @@ ___
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 <br><sub><sup>
-This repo has curated learning content from various sources with and without attributions alongside original content. Please email nixgurus@gmail.com if you have complaints and we will be happy to add attributions or takedown content, as desired by the copyright owner. 
+[Digital Millennium Copyright Act (DMCA) Notice](https://github.com/BINPIPE/resources/blob/master/dmca.md) 
 </sup></sub>
