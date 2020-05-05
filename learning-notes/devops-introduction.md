@@ -16,7 +16,7 @@
  [*As defined by Amazon Web Services.*](https://aws.amazon.com/devops/what-is-devops/)
 
 
-DevOps is not a technology or tool, it is a concept of behavior, and it is an extension of AgileMethodology.The DevOps is a set of practices designed to overcome the gap between development, QAand Operations by effective communication and collaboration, incorporating continuousintegration process with automated deployment.
+DevOps is not a technology or tool, it is a concept of behavior, and it is an extension of Agile Methodology.The DevOps is a set of practices designed to overcome the gap between development, QAand Operations by effective communication and collaboration, incorporating continuousintegration process with automated deployment.
 
 DevOps helps to increase an organization’s speed to deliver applications and services. It allows organizations to serve their customers better and compete more strongly in the market.There are four basic continuous processes in DevOps:
 
