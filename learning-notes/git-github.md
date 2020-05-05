@@ -1,3 +1,4 @@
+
 # Learning Notes - GIT & GITHUB 
 
 `Learning Resources for DevOps, SRE, Cloud & Engineering Management`
@@ -36,7 +37,8 @@ All the repository structure is internal to Git and are transparent to developer
 
 
 **checkout a repository from github**
-create a working copy of a local repository by running the command
+---
+Create a working copy of a local repository by running the command
 ```# git clone /path/to/repository```
 when using a remote server, your command will be
 ```# git clone username@host:/path/to/repository```
@@ -44,6 +46,7 @@ when using a remote server, your command will be
 
 
 **add & commit**
+---
 You can propose changes (add it to the Index) using
 ```# git add <filename>```
 ```# git add *```
@@ -53,6 +56,7 @@ Now the file is committed to the HEAD, but not in your remote repository yet.
 
 
 **pushing changes**
+---
 Your changes are now in the HEAD of your local working copy. To send those changes to your remote repository, execute
 ```# git push origin master```
 Change master to whatever branch you want to push your changes to.
@@ -63,11 +67,13 @@ Now you are able to push your changes to the selected remote server
 
 
 **create a new repository**
+---
 create a new directory, open it and perform a
 ```# git init```
 to create a new git repository.
 
 **Some commands which relate to repository structure:**
+---
 ```
 git add
 // transfers your project from working directory to staging area.
@@ -80,6 +86,7 @@ git push
 ```
 
 **Code snippet for automation**
+---
 ```
 #EAZYGIT
 function eazygit() {
@@ -89,6 +96,7 @@ function eazygit() {
 }
 ```
 **update & merge**
+---
 to update your local repository to the newest commit, execute
 ```# git pull```
 in your working directory to fetch and merge remote changes.
@@ -101,6 +109,7 @@ before merging changes, you can also preview them by using
 
 
 **branching**
+---
 Branches are used to develop features isolated from each other.
 The master branch is the "default" branch when you create a repository.
 Use other branches for development and merge them back to the master branch upon completion.
@@ -115,6 +124,7 @@ a branch is not available to others unless you push the branch to your remote re
 ```# git push origin <branch>```
 
 **Another way to branch:**
+---
 
 ```git rebase myBranch```
 
