@@ -35,18 +35,26 @@ All the repository structure is internal to Git and are transparent to developer
 
 ## **checkout a repository from github**
 
-Create a working copy of a local repository by running the command
-`# git clone /path/to/repository`
-when using a remote server, your command will be
+Create a working copy of a local repository by running the command  
+
+`# git clone /path/to/repository`  
+
+when using a remote server, your command will be  
+
 `# git clone username@host:/path/to/repository`
 
 ## **add & commit**
 
-You can propose changes (add it to the Index) using
-`# git add <filename>`
-`# git add *`
-This is the first step in the basic git workflow. To actually commit these changes use
-`# git commit -m "Commit message"`
+You can propose changes (add it to the Index) using  
+
+`# git add <filename>`  
+
+`# git add *`  
+
+This is the first step in the basic git workflow. To actually commit these changes use  
+
+`# git commit -m "Commit message"`  
+
 Now the file is committed to the HEAD, but not in your remote repository yet.
 
 ## **pushing changes**
@@ -55,14 +63,18 @@ Your changes are now in the HEAD of your local working copy. To send those chang
 `# git push origin master`
 Change master to whatever branch you want to push your changes to.
 
-If you have not cloned an existing repository and want to connect your repository to a remote server, you need to add it with
-`# git remote add origin <server>`
+If you have not cloned an existing repository and want to connect your repository to a remote server, you need to add it with  
+
+`# git remote add origin <server>`  
+
 Now you are able to push your changes to the selected remote server
 
 ## **create a new repository**
 
-create a new directory, open it and perform a
-`# git init`
+create a new directory, open it and perform a  
+
+`# git init`  
+
 to create a new git repository.
 
 ## **Some commands which relate to repository structure:**
@@ -91,38 +103,55 @@ Branches are used to develop features isolated from each other.
 The master branch is the "default" branch when you create a repository.
 Use other branches for development and merge them back to the master branch upon completion.
 
-create a new branch named "feature_x" and switch to it using
-`# git checkout -b feature_x`
-switch back to master
-`# git checkout master`
-and delete the branch again
-`# git branch -d feature_x`
-a branch is not available to others unless you push the branch to your remote repository
-`# git push origin <branch>`
+create a new branch named "feature_x" and switch to it using  
+
+`# git checkout -b feature_x`  
+
+switch back to master  
+
+`# git checkout master`  
+
+and delete the branch again  
+
+`# git branch -d feature_x`  
+
+a branch is not available to others unless you push the branch to your remote repository  
+
+`# git push origin <branch>`  
+
 
 
 ## **update & merge**
 
-to update your local repository to the newest commit, execute
-`# git pull`
-in your working directory to fetch and merge remote changes.
-to merge another branch into your active branch (e.g. master), use
-`# git merge <branch>`
-in both cases git tries to auto-merge changes. Unfortunately, this is not always possible and results in conflicts. You are responsible to merge those conflicts manually by editing the files shown by git. After changing, you need to mark them as merged with
-`# git add <filename>`
-before merging changes, you can also preview them by using
-`# git diff <source_branch> <target_branch>`
+to update your local repository to the newest commit, execute  
 
+`# git pull`  
+
+in your working directory to fetch and merge remote changes.  
+
+To merge another branch into your active branch (e.g. master), use  
+
+`# git merge <branch>`  
+
+in both cases git tries to auto-merge changes. Unfortunately, this is not always possible and results in conflicts. You are responsible to merge those conflicts manually by editing the files shown by git. After changing, you need to mark them as merged with  
+
+`# git add <filename>`  
+
+before merging changes, you can also preview them by using  
+
+`# git diff <source_branch> <target_branch>`  
 
 
 ## **Another way to branch:**
 
-`git rebase myBranch`
+`git rebase myBranch`  
+
 
 This merges the branch with master in a serial fashion.
 
 Now,
-`git push origin master`
+`git push origin master`  
+
 
 Contributing to open source by : fork a project and do some work (add new features) in your branch and then do a pull request on github.
 
