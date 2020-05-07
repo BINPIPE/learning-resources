@@ -8,10 +8,6 @@
 ---
 
 
-
-
-
-
 ## What is Jenkins?
 
 **Jenkins** is a continuous integration server (continuous integration server is the practice of running tests on non-developer machine automatically every time when new code is pushed into source repository). Jenkins is written in Java. It provides many plugins that help to support building, deploying and automating any project. It can be installed through native system packages, Docker or even run standalone by any machine with the help of JRE (Java Runtime Environment). It automates multiple tasks including building, testing and delivering software.
@@ -75,9 +71,9 @@ Though Jenkins is a very powerful tool, it has its flaws.
 -   The biggest pros of Jenkins is that it is managed by the community which holds public meetings and take inputs from the public for the development of Jenkins projects
 -   The biggest con of Jenkin is that Its interface is out dated and not user friendly compared to current UI trends.
 
+## INSTALLATION STEPS
 
-
-## Step 1 — Installing Jenkins
+## Step 1 — Installing Jenkins (Non Docker)
 
 The version of Jenkins included with the default Ubuntu packages is often behind the latest available version from the project itself. To take advantage of the latest fixes and features, you can use the project-maintained packages to install Jenkins.
 
@@ -185,6 +181,30 @@ Copy the 32-character alphanumeric password from the terminal and paste it into 
 
 The next screen presents the option of installing suggested plugins or selecting specific plugins. We’ll click the  **Install suggested plugins**  option, which will immediately begin the installation process. When the installation is complete, you will be prompted to set up the first administrative user. It’s possible to skip this step and continue as  `admin`  using the initial password we used above, but we’ll take a moment to create the user.
 
+
+## Installing Jenkins (Docker)
+
+Assuming that Docker is installed in the server already, the following script (or commands from the script) can be run to install Jenkins.
+
+```
+#!/bin/bash
+ 
+# Pull latest container
+docker pull jenkins
+ 
+# Setup local configuration folder
+# Should already be in a jenkins folder when running this script.
+export CONFIG_FOLDER=$PWD/config
+mkdir $CONFIG_FOLDER
+chown 1000 $CONFIG_FOLDER
+ 
+# Start container
+docker run --restart=always -d -p 49001:8080 \
+-v $CONFIG_FOLDER:/var/jenkins_home:z \
+--name jenkins -t jenkins
+ 
+docker logs --follow jenkins
+```
 
 
 <pre>
