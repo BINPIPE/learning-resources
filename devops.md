@@ -13,6 +13,8 @@ What is DevOps?
 
 DevOps (a clipped compound of "development" and "operations") is a culture, movement or practice that emphasizes the collaboration and communication of both software developers and other information-technology (IT) professionals while automating the process of software delivery and infrastructure changes. [Wikipedia](https://en.wikipedia.org/wiki/DevOps)
 
+Read about the [DASA DevOps Competence Model](https://www.devopsagileskills.org/dasa-competence-model/) which describes the essential skills & knowlwdge areas needed in a DevOps team.
+
 Index
 -----
 
