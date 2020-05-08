@@ -206,6 +206,11 @@ docker run --restart=always -d -p 49001:8080 \
 docker logs --follow jenkins
 ```
 
+Additional Stuff-
+
+* [A good article on webooks triggering automated builds](https://medium.com/faun/triggering-jenkins-build-on-push-using-github-webhooks-52d4361542d4)
+
+
 
 <pre>
 <a href="https://www.binpipe.org">BINPIPE</a> aims to simplify learning for those who are looking to make a foothold in the industry. 
