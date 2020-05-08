@@ -77,31 +77,31 @@ Though Jenkins is a very powerful tool, it has its flaws.
 
 The version of Jenkins included with the default Ubuntu packages is often behind the latest available version from the project itself. To take advantage of the latest fixes and features, you can use the project-maintained packages to install Jenkins.
 
-First, add the repository key to the system:
+Install java 8  
 
 ```
-wget -q -O - http://pkg.jenkins-ci.org/debian/jenkins-ci.org.key | sudo apt-key add -
+sudo apt install openjdk-8-jre  
 ```
 
-When the key is added, the system will return  `OK`. Next, append the Debian package repository address to the server’s  `sources.list`:
-
+Set default java version as java 8  
 ```
-sudo sh -c 'echo deb http://pkg.jenkins-ci.org/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'
+sudo update-alternatives --config java
 ```
-
-When both of these are in place, run  `update`  so that  `apt`  will use the new repository:
-
+Add the key  
 ```
-sudo apt update
+wget -q -O - https://pkg.jenkins.io/debian-stable/jenkins.io.key | sudo apt-key add -
 ```
+Add repository  
 
-Finally, install Jenkins and its dependencies:
+```sudo apt-add-repository "deb https://pkg.jenkins.io/debian-stable binary/"```
 
+
+Install jenkins  
 ```
 sudo apt install jenkins
 ```
 
-Now that Jenkins and its dependencies are in place, we’ll start the Jenkins server.
+Now that Jenkins and its dependencies are in place, we’ll start the Jenkins server.  
 
 ## Step 2 — Starting Jenkins
 
