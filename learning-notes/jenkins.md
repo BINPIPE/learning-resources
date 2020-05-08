@@ -131,7 +131,7 @@ If everything went well, the beginning of the output should show that the servic
 
 Now that Jenkins is running, let’s adjust our firewall rules so that we can reach it from a web browser to complete the initial setup.
 
-## Step 3 — Opening the Firewall
+## Step 3 — Opening the Firewall (Optional)
 
 By default, Jenkins runs on port  `8080`, so let’s open that port using  `ufw`:
 
