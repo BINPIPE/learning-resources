@@ -16,8 +16,8 @@ Lesson Plans
 * Lecture 02 - DevOps Practices
 * Lecture 03 - Version Control Systems
 * Lecture 04 - Build Tools & Jenkins Fundamentals
-* Lecture 05 - Software and Automation Testing Frameworks
-* Lecture 06 - Containerization with Docker
+* Lecture 05 - Containerization with Docker
+* Lecture 06 - Software and Automation Testing Frameworks
 * Lecture 07 - CI/CD Pipelines
 * Lecture 08 - Continuous Monitoring
 * Lecture 07 - Configuration Management Tools
