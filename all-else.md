@@ -1,5 +1,13 @@
 # ALL ELSE!
-> A curated list of fun libs/packages/languages that have no real purpose.
+> A curated list of fun libs/packages/languages that have no real purpose!
+
+`Learning Resources for DevOps, SRE, Cloud & Engineering Management`
+
+[![BINPIPE](https://img.shields.io/badge/BINPIPE-YouTube-red)](https://www.youtube.com/channel/UCPTgt4Wo0MAnuzNEEZlk90A)
+[![Learn DevOps!](https://img.shields.io/badge/BINPIPE-Learn--DevOps-orange)](https://github.com/BINPIPE/resources/blob/master/devops-lesson-plans.md)
+[![BINPIPE](https://img.shields.io/badge/Live--Classroom-blue)](https://forms.gle/tDJxDyj2nJyfsgsk7)
+---
+
 
 ## Contents
 
@@ -170,5 +178,14 @@
 - [Slack Typing](https://github.com/will/slacktyping) - A very good program that makes it so it says I'm typing when anyone else is typing.
 - [eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee](https://github.com/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee) - eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee (archiveeeeeeeeeed).
 - [awesome-awesome-awesome](https://github.com/jonatasbaldin/awesome-awesome-awesome) - Awesome list of repositories of awesome lists 🤷
+<pre>
+<a href="https://www.binpipe.org">BINPIPE</a> aims to simplify learning for those who are looking to make a foothold in the industry. 
+Write to me at <b>nixgurus@gmail.com</b> if you are looking for tailor-made training sessions. 
+For self-study resources look around in this repository, <a href="https://www.binpipe.org/">the Binpipe Blog</a> and <a href="https://www.youtube.com/channel/UCPTgt4Wo0MAnuzNEEZlk90A">Youtube Channel</a>.
+</pre>
 
-_Maintained by_ **Prasanjit Singh** - https://www.linkedin.com/in/prasanjit-singh/
+___
+:ledger: Maintainer: **[Prasanjit Singh](https://www.linkedin.com/in/prasanjit-singh)** | **www.binpipe.org**
+___
+
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
