@@ -1,7 +1,11 @@
-# Engineering Management
+# Engineering Management 
+
+`Learning Resources for DevOps, SRE, Cloud & Engineering Management`
 
 [![BINPIPE](https://img.shields.io/badge/BINPIPE-YouTube-red)](https://www.youtube.com/channel/UCPTgt4Wo0MAnuzNEEZlk90A)
 [![Learn DevOps!](https://img.shields.io/badge/BINPIPE-Learn--DevOps-orange)](https://github.com/BINPIPE/resources/blob/master/devops-lesson-plans.md)
+[![BINPIPE](https://img.shields.io/badge/Live--Classroom-blue)](https://forms.gle/tDJxDyj2nJyfsgsk7)
+---
 
 
 There are very few engineers who want to grow into "Technical" _Software Engineering Manager_. Instead they prefer to be a Tech Lead or an Architect. People think that management is difficult. Why? Because, this role is not about __just__ the Tech. It is easier to fight with technology, but difficult to get people together and trust you! That's the challenge! Are you in for it?
