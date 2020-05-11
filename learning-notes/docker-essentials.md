@@ -306,6 +306,7 @@ docker network disconnect [NETWORK] [CONTAINER]
 ```
 git clone https://github.com/BINPIPE/static-site-docker.git
 cd BINPIPE/static-site-docker
+chmod +x wrapper.sh
 ```
 ```script
 docker build --tag binpipe/static-site-docker:1.0 .
