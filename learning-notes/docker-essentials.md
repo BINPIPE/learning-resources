@@ -49,6 +49,16 @@ Docker Images are stored in the Docker Registry. It can be either a user’s loc
 
 ### **Common Docker Commands**
 
+
+Install Docker:
+
+```
+sudo apt-get remove docker docker-engine docker.io containerd runc
+sudo apt install docker.io
+sudo usermod -aG docker your-user
+```
+
+
 Create a container (without starting it):
 
 ```output
