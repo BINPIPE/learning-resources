@@ -326,8 +326,6 @@ cd node-bulletin-board/bulletin-board-app
 
 ```
 
-----------
-
 The  `node-bulletin-board`  project is a simple bulletin board application, written in Node.js. In this example, let’s imagine you wrote this app, and are now trying to containerize it.
 
 **Define a container with Dockerfile**
