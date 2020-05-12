@@ -10,6 +10,7 @@ Curated List of Learning Resources
 --- |
 [DevOps](https://github.com/BINPIPE/resources/blob/master/devops.md)
 [SRE](https://github.com/BINPIPE/resources/blob/master/sre.md)
+[Certification Exams](https://github.com/BINPIPE/resources/blob/master/certifications.md)
 [Cloud](https://github.com/BINPIPE/resources/blob/master/cloud.md)
 [AI/ML](https://github.com/BINPIPE/resources/blob/master/ai.md)
 [Engineering-Management](https://github.com/BINPIPE/resources/blob/master/management.md)
