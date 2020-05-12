@@ -15,10 +15,10 @@ Lesson Plans
 * Lecture 01 - Introduction to DevOps Fundamentals
 * Lecture 02 - DevOps Practices
 * Lecture 03 - Version Control Systems
-* Lecture 04 - Build Tools & Jenkins Fundamentals
-* Lecture 05 - Containerization with Docker
-* Lecture 06 - Software and Automation Testing Frameworks
-* Lecture 07 - CI/CD Pipelines
+* Lecture 04 - Jenkins Fundamentals
+* Lecture 05 - Docker Essentials
+* Lecture 06 - CI/CD Pipelines
+* Lecture 07 - Software and Automation Testing Frameworks
 * Lecture 08 - Continuous Monitoring
 * Lecture 07 - Configuration Management Tools
 * Lecture 09 - Cloud & DevOps
@@ -86,7 +86,7 @@ Lesson Plans
 - Lecture 08 - Apache Web server
 - Lecture 09 - NFS & Samba
 - Lecture 10 - Database Server
-*Hands-on Projects* 
+*Hands-on Projects*
 - Remote Installation of Linux
 - Hosting a LAMP Application
 
@@ -98,8 +98,8 @@ Notes
 *  [WIP](https://www.binpipe.org/)
 
 <pre>
-<a href="https://www.binpipe.org/">BINPIPE</a> aims to simplify learning for those who are looking to make a foothold in the industry. 
-Write to me at <b>nixgurus@gmail.com</b> if you are looking for tailor-made training sessions. 
+<a href="https://www.binpipe.org/">BINPIPE</a> aims to simplify learning for those who are looking to make a foothold in the industry.
+Write to me at <b>nixgurus@gmail.com</b> if you are looking for tailor-made training sessions.
 For self-study resources look around in this repository, <a href="https://www.binpipe.org/">the Binpipe Blog</a> and our <a href="https://www.youtube.com/channel/UCPTgt4Wo0MAnuzNEEZlk90A">Youtube Channel</a>.
 </pre>
 
