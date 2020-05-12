@@ -73,6 +73,7 @@ Lesson Plans
 * Azure Cloud Architect
 * Oracle Cloud Infrastructure Architect
 * Google Cloud Architect
+* TOGAF
 
 &#x1F4D9; **Linux Fundamentals & System Administration**
 
