@@ -1,4 +1,4 @@
-LEARN DEVOPS
+LESSON PLANS TO LEARN DEVOPS
 ============
 
 Simplified resources for learning DevOps methodically.
