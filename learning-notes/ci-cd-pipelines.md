@@ -64,16 +64,16 @@ source-code:
 source-code:
 
 
-- Multi-branch deployments
+- Multi-branch deployments  
 
-- Parametrized Jobs
+- Parametrized Jobs  
 
-- Upstream & Downstream Jobs
+- Upstream & Downstream Jobs  
 
-- Scripted Pipelines (Groovy)
+- Scripted Pipelines (Groovy)  
 source-code:
 
-- Declarative Pipelines
+- Declarative Pipelines  
 source-code:
 
 <pre>
