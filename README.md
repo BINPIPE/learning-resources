@@ -15,6 +15,7 @@ Curated List of Learning Resources
 [AI/ML](https://github.com/BINPIPE/resources/blob/master/ai.md)
 [Engineering-Management](https://github.com/BINPIPE/resources/blob/master/management.md)
 [Books](https://github.com/BINPIPE/resources/blob/master/books.md)
+[Lesson Plan - DevOps](https://github.com/BINPIPE/resources/blob/master/devops-lesson-plans.md)
 [All-Else!](https://github.com/BINPIPE/resources/blob/master/all-else.md)
 
 <pre>
