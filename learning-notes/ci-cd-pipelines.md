@@ -56,24 +56,26 @@ CI/CD is much more than the automation of tasks to avoid human error. It lets us
 
 Follow the `Jenkins-CI/CD Pipelines` video at youtube.binpipe.org for a complete run-through of the following use cases:
 
-- Freestyle CI/CD Pipeline Job on Jenkins //Static-Website HTML/CSS
+- Freestyle CI/CD Pipeline Job on Jenkins //Static-Website HTML/CSS  
 source-code:
 
 
-- Freestyle CI/CD Pipeline Job on Jenkins //Java Project
+- Freestyle CI/CD Pipeline Job on Jenkins //Java Project    
 source-code:
 
 
 - Multi-branch deployments  
 
+
 - Parametrized Jobs  
 
 - Upstream & Downstream Jobs  
 
-- Scripted Pipelines (Groovy)  
+- Scripted Pipelines (Groovy)      
 source-code:
 
-- Declarative Pipelines  
+- Declarative Pipelines     
+
 source-code:
 
 <pre>
