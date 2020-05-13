@@ -54,7 +54,7 @@ CI/CD is much more than the automation of tasks to avoid human error. It lets us
 
 ## Demonstration of CI/CD Pipelines
 
-Follow the `Jenkins-CI/CD Pipelines` video at [youtube.binpipe.org](youtube.binpipe.org) for a complete run-through of the following use cases:
+Follow the `Jenkins-CI/CD Pipelines` video at [youtube.binpipe.org](https://youtube.binpipe.org) for a complete run-through of the following use cases:
 
 - **Freestyle CI/CD Pipeline Job on Jenkins** //Static-Website HTML/CSS  
 source-code:
