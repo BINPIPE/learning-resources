@@ -3,9 +3,9 @@ DevOps Learning Tracks
 
 Simplified resources for learning DevOps methodically.
 
-- [![BINPIPE](https://img.shields.io/badge/Learning--Videos-red)](https://www.youtube.com/channel/UCPTgt4Wo0MAnuzNEEZlk90A)
--	[![BINPIPE](https://img.shields.io/badge/Learning--Notes-green)](#Notes)
-- [![BINPIPE](https://img.shields.io/badge/Live--Classroom-blue)](https://forms.gle/tDJxDyj2nJyfsgsk7)
+[![BINPIPE](https://img.shields.io/badge/Learning--Videos-red)](https://www.youtube.com/channel/UCPTgt4Wo0MAnuzNEEZlk90A)
+[![BINPIPE](https://img.shields.io/badge/Learning--Notes-green)](#Notes)
+[![BINPIPE](https://img.shields.io/badge/Live--Classroom-blue)](https://forms.gle/tDJxDyj2nJyfsgsk7)
 
 Lesson Plans
 ------------
