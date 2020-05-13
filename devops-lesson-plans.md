@@ -1,4 +1,4 @@
-LEARN DEVOPS
+DevOps Learning Tracks
 ============
 
 Simplified resources for learning DevOps methodically.
