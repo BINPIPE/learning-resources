@@ -12,7 +12,7 @@ Lesson Plans
 
 &#x1F4D7; **DevOps Foundations**
 
-* Lecture 01 - Introduction to DevOps Fundamentals
+* Lecture 01 - Introduction to DevOps Fundamentals  [![BINPIPE](https://img.shields.io/badge/Watch--the--Video-red)](https://www.youtube.com/channel/UCPTgt4Wo0MAnuzNEEZlk90A)  [![BINPIPE](https://img.shields.io/badge/Read--up--Notes-black)](https://github.com/BINPIPE/learning-resources/blob/master/learning-notes/devops-introduction.md)
 * Lecture 02 - DevOps Practices
 * Lecture 03 - Version Control Systems
 * Lecture 04 - Jenkins Fundamentals
@@ -90,13 +90,6 @@ Lesson Plans
 *Hands-on Projects*
 - Remote Installation of Linux
 - Hosting a LAMP Application
-
-Notes
-------------
-
-*  [WIP](#culture)
-*  [WIP](#process)
-*  [WIP](https://www.binpipe.org/)
 
 <pre>
 <a href="https://www.binpipe.org/">BINPIPE</a> aims to simplify learning for those who are looking to make a foothold in the industry.
