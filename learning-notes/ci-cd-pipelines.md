@@ -74,11 +74,11 @@ source-code:
 - **Scripted Pipelines** (Groovy)      
 source-code:
 
-- **Declarative Pipelines**     
-source-code:
+
 
 
 **Coming up in the next session-**  
+- Declarative Pipelines
 - Multi-branch deployments with auto-triggering of jobs via webhook
 - Integrating Test Cases & Code Quality Gates (SonarQube)
 - Implementing a feedback-loop aka `Slack Alerts`

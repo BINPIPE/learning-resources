@@ -18,11 +18,11 @@ Lesson Plans
 * Lecture 04 - Jenkins Fundamentals
 * Lecture 05 - Docker Essentials
 * Lecture 06 - CI/CD Pipelines
-* Lecture 07 - Software and Automation Testing Frameworks
-* Lecture 08 - Continuous Monitoring
+* Lecture 07 - Advanced Pipelines, Automation Testing & Alerting.
+* Lecture 08 - Continuous Monitoring & Logging
 * Lecture 07 - Configuration Management Tools
 * Lecture 09 - Cloud & DevOps
-* Lecture 10 - DevOps at work! (Real-World Projects)
+* Lecture 10 - DevOps in action! (Real-World Projects)
 - Building a simple monitoring system using docker
 - CI/CD pipeline for a containerized Wordpress website
 
