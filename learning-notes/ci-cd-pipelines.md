@@ -54,6 +54,20 @@ CI/CD is much more than the automation of tasks to avoid human error. It lets us
 
 ## Demonstration of CI/CD Pipelines
 
+
+```
+::Prerequisites::
+In the Jenkins node following should be installed, apart from the plugins that will be demonstrated in video-
+sudo apt install docker.io
+docker --version
+> Docker version 18.09.2, build 6247962
+sudo usermod -a -G docker jenkins
+service jenkins restart
+sudo systemctl enable docker
+sudo systemctl start docker
+```
+
+
 Follow the `Jenkins-CI/CD Pipelines` video at [youtube.binpipe.org](http://youtube.binpipe.org) for a complete run-through of the following use cases:
 
 - **Freestyle CI/CD Pipeline Job on Jenkins** //Static-Website HTML/CSS  
@@ -61,19 +75,18 @@ source-code: https://github.com/BINPIPE/static-site-docker.git
 
 
 - **Freestyle CI/CD Pipeline Job on Jenkins** //Java Project    
-source-code: https://github.com/BINPIPE/devops_pipeline_demo.git
+source-code: https://github.com/BINPIPE/devops_pipeline_demo.git  
 
 - **Upstream, Downstream & Scheduled Jobs**
-Jobs that can be run as per predefined triggers or times.
+Jobs that can be run as per predefined triggers or times.  
 
 - **Parametrized Jobs**  
 Jobs which run based on user-defined parameters. For instance, we can define environments where the code will be deployed to or the branch from where the code will be checked out.
-source-code:
+source-code: https://github.com/BINPIPE/parametrized-job-demo  
 
 
 - **Scripted Pipelines** (Groovy)      
-source-code:
-
+source-code: https://github.com/BINPIPE/scripted-pipeline-demo.git  
 
 
 
