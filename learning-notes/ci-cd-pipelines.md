@@ -57,25 +57,33 @@ CI/CD is much more than the automation of tasks to avoid human error. It lets us
 Follow the `Jenkins-CI/CD Pipelines` video at [youtube.binpipe.org](http://youtube.binpipe.org) for a complete run-through of the following use cases:
 
 - **Freestyle CI/CD Pipeline Job on Jenkins** //Static-Website HTML/CSS  
-source-code:
+source-code: https://github.com/BINPIPE/static-site-docker.git
 
 
 - **Freestyle CI/CD Pipeline Job on Jenkins** //Java Project    
-source-code:
+source-code: https://github.com/BINPIPE/devops_pipeline_demo.git
 
-
-- **Multi-branch deployments**  
-
+- **Upstream, Downstream & Scheduled Jobs**
+Jobs that can be run as per predefined triggers or times.
 
 - **Parametrized Jobs**  
+Jobs which run based on user-defined parameters. For instance, we can define environments where the code will be deployed to or the branch from where the code will be checked out.
+source-code:
 
-- **Upstream & Downstream Jobs**  
 
 - **Scripted Pipelines** (Groovy)      
 source-code:
 
 - **Declarative Pipelines**     
 source-code:
+
+
+**Coming up in the next session-**  
+- Multi-branch deployments with auto-triggering of jobs via webhook
+- Integrating Test Cases & Code Quality Gates (SonarQube)
+- Implementing a feedback-loop aka `Slack Alerts`
+
+
 
 <pre>
 <a href="https://www.binpipe.org">BINPIPE</a> aims to simplify learning for those who are looking to make a foothold in the industry.
