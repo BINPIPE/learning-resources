@@ -5,7 +5,6 @@
 [![BINPIPE](https://img.shields.io/badge/BINPIPE-YouTube-red)](https://www.youtube.com/channel/UCPTgt4Wo0MAnuzNEEZlk90A)
 [![Learn DevOps!](https://img.shields.io/badge/BINPIPE-Learn--DevOps-orange)](https://github.com/BINPIPE/resources/blob/master/devops-lesson-plans.md)
 [![BINPIPE](https://img.shields.io/badge/Live--Classroom-blue)](https://forms.gle/tDJxDyj2nJyfsgsk7)
-[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://paypal.me/Prasanjit?locale.x=en_GB)
 
 Curated List of Learning Resources
 --- |
