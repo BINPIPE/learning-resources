@@ -85,16 +85,139 @@ Jobs which run based on user-defined parameters. For instance, we can define env
 source-code: https://github.com/BINPIPE/parametrized-job-demo  
 
 
-- **Scripted Pipelines** (Groovy)      
-source-code: https://github.com/BINPIPE/scripted-pipeline-demo.git  
+- **Scripted Pipelines & Declarative Pipelines** (Groovy)      
+source-code: https://github.com/BINPIPE/scripted-and-declarative-pipeline-demo.git  
 
 
+-   The **key difference** between Declarative pipeline and Scripted pipeline would be with respect to their **syntaxes** and their **flexibility**.
 
-**Coming up in the next session-**  
-- Declarative Pipelines
-- Multi-branch deployments with auto-triggering of jobs via webhook
-- Integrating Test Cases & Code Quality Gates (SonarQube)
-- Implementing a feedback-loop aka `Slack Alerts`
+-   Declarative pipeline is a relatively new feature that supports the pipeline as code concept. It makes the pipeline code easier to read and write. This code is written in a Jenkinsfile which can be checked into a source control management system such as Git.
+
+-   Whereas, the scripted pipeline is a traditional way of writing the code. In this pipeline, the Jenkinsfile is written on the Jenkins UI instance.
+
+-   Though both these pipelines are based on the groovy DSL, the scripted pipeline uses stricter groovy based syntaxes because it was the first pipeline to be built on the groovy foundation. Since this Groovy script was not typically desirable to all the users, the declarative pipeline was introduced to offer a simpler and more optioned Groovy syntax.
+
+-   The declarative pipeline is defined within a block labelled ‘pipeline’ whereas the scripted pipeline is defined within a ‘node’.
+
+
+Find the a demo repo here for these pipeline types - https://github.com/BINPIPE/scripted-and-declarative-pipeline-demo.git
+
+
+**Structure and syntax of the Declarative pipeline:**
+
+The Agent is where the whole pipeline runs. Example, Docker. The Agent has following parameters:
+
+-   **any** – Which mean the whole pipeline will run on any available agent.
+
+-   **none** – Which mean all the stages under the block will have to declared with agent separately.
+
+-   **label** – this is just a label for the Jenkins environment
+
+-   **docker** – this is to run the pipeline in Docker environment.
+
+
+The Declarative pipeline code will looks like this:
+
+```
+pipeline {
+    agent any
+    stages {
+        stage('Build') {
+            steps {
+                sh 'docker build -t flask-app:latest .'
+            }
+        }
+
+
+        stage('Test') {
+            steps {
+                sh 'python3 test.py'
+            }
+            post {
+                always {junit 'test-reports/*.xml'}
+            }
+        }
+
+        stage('Approve Deployment') {
+            input{
+                 message "Do you want to proceed for deployment?"
+                    }
+            steps {
+                sh 'echo "Deploying into Server"'
+                sh 'docker rm -f flask-app || true'
+                sh 'docker run -d -p 5000:5000 --name flask-app flask-app:latest'
+                sh 'echo "Check App at http://ip-address:5000/"'
+
+              }
+        }    
+
+    }     
+}
+```
+
+
+**Scripted Pipeline:**
+
+-   The scripted pipeline is a traditional way of writing the Jenkins pipeline as code. Ideally, Scripted pipeline is written in Jenkins file on web UI of Jenkins.
+
+-   Unlike Declarative pipeline, the scripted pipeline strictly uses groovy based syntax. Since this, The scripted pipeline provides huge control over the script and can manipulate the flow of script extensively.
+
+-   This helps developers to develop advance and complex pipeline as code.
+
+
+**Structure and syntax of the scripted pipeline:**
+
+_Node Block_:
+
+Node is the part of the Jenkins architecture where Node or agent node will run the part of the workload of the jobs and master node will handle the configuration of the job. So this will be defined in the first place as
+```
+node {
+}
+```
+_Stage Block_:
+
+Stage block can be a single stage or multiple as the task goes. And it may have common stages like
+
+-   Cloning the code from SCM
+
+-   Building the project
+
+-   Running the Unit Test cases
+
+-   Deploying the code
+
+-   Other functional and performance tests.
+
+
+So the stages can be written as mentioned below:
+```
+stage {
+}
+```
+So, Together, the scripted pipeline can be written as mentioned below.
+
+```
+node('master') {
+ stage('Source') {
+  git 'https://github.com/BINPIPE/scripted-and-declarative-pipeline-demo.git'
+ }
+ stage('Build') {
+  sh 'docker build -t flask-app:latest .'
+ }
+
+ stage('Test') {
+  sh 'python3 test.py'
+ }
+
+}
+```
+
+-   Declarative Pipeline encourages a **declarative programming model**, whereas, Scripted Pipelines follow a more **imperative programming model**.
+
+-   Declarative type imposes limitations to the user with a more strict and pre-defined structure, which would be ideal for simpler continuous delivery pipelines.
+
+-   Scripted type has very few limitations that to with respect to structure and syntax that tend to be defined by Groovy, thus making it ideal for users with more complex requirements.
+
 
 
 
