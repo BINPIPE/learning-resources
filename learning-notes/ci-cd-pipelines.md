@@ -223,14 +223,21 @@ node('master') {
 
 The Multibranch Pipeline project type enables you to implement different Jenkinsfile for different branches of the same project. In a Multibranch Pipeline project, Jenkins automatically discovers, manages and executes Pipelines for branches that contain an in-source control.
 
-Follow this repo - https://github.com/BINPIPE/multibranch-demo
+Follow this repo - https://github.com/BINPIPE/multibranch-demo  
+
 And the video to be able to learn about Multibranch pipelines.
 
+
+**Integrating SonarQube with Jenkins for Code Quality Analysis**
+
+Watch the video to follow the integration process.  
+Reference repo - https://github.com/BINPIPE/java-springboot-sonarqube
 
 
 **Integrating Slack with Jenkins for Alerts**
 
-Watch the video to follow the integration process. We will cover, slack integration for freestyle jobs and declarative pipelines.
+Watch the video to follow the integration process. We will cover, slack integration for freestyle jobs and declarative pipelines.  
+Reference repo - https://github.com/BINPIPE/java-springboot-sonarqube
 
 <pre>
 <a href="https://www.binpipe.org">BINPIPE</a> aims to simplify learning for those who are looking to make a foothold in the industry.
