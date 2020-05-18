@@ -219,7 +219,18 @@ node('master') {
 -   Scripted type has very few limitations that to with respect to structure and syntax that tend to be defined by Groovy, thus making it ideal for users with more complex requirements.
 
 
+**Multi-Branch Pipelines**
 
+The Multibranch Pipeline project type enables you to implement different Jenkinsfile for different branches of the same project. In a Multibranch Pipeline project, Jenkins automatically discovers, manages and executes Pipelines for branches that contain an in-source control.
+
+Follow this repo - https://github.com/BINPIPE/multibranch-demo
+And the video to be able to learn about Multibranch pipelines.
+
+
+
+**Integrating Slack with Jenkins for Alerts**
+
+Watch the video to follow the integration process. We will cover, slack integration for freestyle jobs and declarative pipelines.
 
 <pre>
 <a href="https://www.binpipe.org">BINPIPE</a> aims to simplify learning for those who are looking to make a foothold in the industry.
