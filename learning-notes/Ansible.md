@@ -70,38 +70,39 @@ Here, are important land marks from the history of ansible:
 
 ## Ansible Installation in Linux
 
-Once you have compared and weighed your options and decided to go for Ansible, the next step is to have it installed on your system. We will go through the steps of installation in different Linux distributions, the most popular ones, in the next small tutorial.
+Once you have compared and weighed your options and decided to go for Ansible, the next step is to have it installed on your system. We will go through the steps of installation in different Linux distributions.
 
 ### Install Ansible on Centos/RedHat systems
 
 **Step 1)**  Install EPEL repo
-
+```
 [root@ansible-server ~]# sudo yum install epel-release
-
+```
 **Step 2)** Install ansible package
-
+```
 [root@ansible-server ~]# sudo  yum install -y ansible
-
+```
 [![](https://github.com/BINPIPE/learning-resources/blob/master/learning-notes/images/070919_1256_AnsibleTuto1.png)](https://github.com/BINPIPE/learning-resources/blob/master/learning-notes/images/070919_1256_AnsibleTuto1.png)
 
 ### Install ansible on Ubuntu/Debian systems
 
 **Step 1)**  Perform an update to the packages
-
+```
 $ sudo apt update
-
+```
 **Step 2)**  Install the software-properties-common package
-
+```
 $ sudo apt install software-properties-common
-
+```
 **Step 3)**  Install ansible personal package archive
-
+```
 $ sudo apt-add-repository ppa:ansible/ansible
-
+```
 **Step 4)**  Install ansible
-
+```
 $ sudo apt update
 $ sudo apt install ansible
+```
 
 ## Ansible ad-hoc commands
 
@@ -559,77 +560,34 @@ Running the p4.yml playbook on two hosts and interpreting the output. The same c
 Explanation:
 
 1.  Ansible-playbook command that runs p4.yml
-2.  Playbook skipsSELinux role because it is already enabled.
+2.  Playbook skips SELinux role because it is already enabled.
 3.  Ansible found that httpd package is already installed, so it returns ok.
 4.  Resolver was set, and role resolver got status changed.
 
-## Ansible Commands Cheat Sheet
 
-Install EPEL repo on Centos/RHEL systems
-```
-[root@ansible-server ~]# sudo yum install epel-release
-```
-Install ansible package on Centos/RHEL systems
-```
-[root@ansible-server ~]# sudo  yum install -y ansible
-```
-Perform an update to the packages on Debian/Ubuntu systems
-```
-$ sudo apt update
-```
-Install the software-properties-common package on Debian/Ubuntu systems
-```
-$ sudo apt install software-properties-common
-```
-Install ansible personal package archive on Debian/Ubuntu systems
-```
-$ sudo apt-add-repository ppa:ansible/ansible
-```
-Install ansible on Debian/Ubuntu systems
-```
-$ sudo apt update
-$ sudo apt install ansible
-```
-Issue a ping command on all servers defined in the inventory file named hosts
-```
-[root@ansible-server test_ansible]# ansible -i hosts all -m ping
-```
-Issue a ping command only on host2
-```
-[root@ansible-server test_ansible]# ansible -i hosts all -m ping --limit host2
-```
-Copy the file "testfile" on all hosts in the inventory file
-```
-[root@ansible-server test_ansible]# ansible -i hosts all -m copy -a "src=/root/test_ansible/testfile dest=/tmp/testfile"
-```
-Install ncdu package on all hosts
-```
-[root@ansible-server test_ansible]# ansible -i hosts all -m yum -a 'name=ncdu state=present'
-```
-Remove ncdu package on all hosts
-```
-[root@ansible-server test_ansible]# ansible -i hosts all -m yum -a 'name=ncdu state=absent'
-```
-Build the directory structure for role named role1.
-```
-[root@ansible-server test2]# ansible-galaxy init role1
-```
-Dry-run p4.yml playbook
-```
-[root@ansible-server test_ansible]# ansible-playbook -i hosts p4.yml --check
-```
-Run p4.yml playbook with password authentication for all hosts
-```
-[root@ansible-server test_ansible]# ansible-playbook -i hosts p4.yml -k
-```
-#### Summary
 
-In a world with technology that is continuously changing at a swift pace and growing incredibly fast at the same time, system administrators and devops engineers must think of different approaches on how to automate routine tasks and orchestrate large pools of servers.
+## Example Adhoc Commands in Ansible
 
-While there are many tools (Chef, Puppet) out there that do the same thing with some differences, Ansible managed to rise above all of them with its simplicity, improved security, and most important its smooth learning curve. Due to these qualities and fast adoption of Ansible, we created a tutorial full of examples so you can have an even more seamless first experience in working with Ansible.
+```
+ansible all -i inventory-file -l inventory-group -m shell -u username --become-user=root -b -a 'date; apt-get install ntp -y ; service ntp stop ; sudo ntpd -gq ; service ntp start; date'
+```
+
+```
+ansible all -i inventory-file -l inventory-group -m copy -u admin --become-user=root -b -a 'src=/etc/httpd/conf/httpd.conf dest=/tmp/httpd.conf.backup'
+```
+
+```
+ansible all -i inventory-file -l inventory-group -m shell -u username --become-user=root -b -a 'service httpd restart ; service httpd status'
+```
 
 
 
+## Example Playbooks in Ansible
+
+- [Setting Netdata Monitoring Application](https://github.com/BINPIPE/ansible-netdata)
+- [Setting a LAMP Stack & Installing Wordpress](https://www.digitalocean.com/community/tutorials/how-to-use-ansible-to-install-and-set-up-wordpress-with-lamp-on-ubuntu-18-04)  
+  * Steps: [Deploy LAMP Stack & Install Wordpress on Ubuntu](https://www.digitalocean.com/community/tutorials/how-to-use-ansible-to-install-and-set-up-wordpress-with-lamp-on-ubuntu-18-04)  
+  * Repository: [https://github.com/do-community/ansible-playbooks](https://github.com/do-community/ansible-playbooks)
 
 
 
