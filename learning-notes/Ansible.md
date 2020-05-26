@@ -225,7 +225,7 @@ ansible all -i inventory-file -l inventory-group -m shell -u username --become-u
 ## Installing Netdata Using Adhoc commands
 
 ```
-ansible all -i hosts -l all -m shell -u ubuntu --become-user=root -b -a 'curl -Ss https://github.com/BINPIPE/shell-scripts/blob/master/install_netdata.sh > install_netdata.sh ; chmod +x install_netdata.sh'
+curl -Ss https://github.com/BINPIPE/shell-scripts/blob/master/install_netdata.sh > install_netdata.sh ; chmod +x install_netdata.sh
 
 ansible all -i hosts -l all -m script -u ubuntu --become-user=root -b -a 'install_netdata.sh'
 
