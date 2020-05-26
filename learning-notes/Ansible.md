@@ -76,11 +76,11 @@ Once you have compared and weighed your options and decided to go for Ansible, t
 
 **Step 1)**  Install EPEL repo
 ```
-[ec2-user@ansible-server ~]# sudo yum install epel-release
+[ubuntu@ansible-server ~]# sudo yum install epel-release
 ```
 **Step 2)** Install ansible package
 ```
-[ec2-user@ansible-server ~]# sudo  yum install -y ansible
+[ubuntu@ansible-server ~]# sudo  yum install -y ansible
 ```
 [![](https://github.com/BINPIPE/learning-resources/blob/master/learning-notes/images/070919_1256_AnsibleTuto1.png)](https://github.com/BINPIPE/learning-resources/blob/master/learning-notes/images/070919_1256_AnsibleTuto1.png)
 
@@ -113,7 +113,7 @@ For this tutorial, a simple two servers hosts file will be configured, containin
 You can make sure that the hosts are accessible from the ansible server by issuing a ping command on all hosts.
 
 ```
-[ec2-user@ansible-server test_ansible]# ansible -i hosts all -m ping
+[ubuntu@ansible-server test_ansible]# ansible -i hosts all -m ping
 ```
 
 ```
@@ -141,7 +141,7 @@ Explanation:
 You can issue the same command only on a specific host if needed.
 
 ```
-[ec2-user@ansible-server test_ansible]# ansible -i hosts all -m ping --limit host2
+[ubuntu@ansible-server test_ansible]# ansible -i hosts all -m ping --limit host2
 ```
 
 ```
@@ -163,7 +163,7 @@ Explanation:
 If you need to copy a file to multiple destinations rapidly, you can use the copy module in ansible which uses SCP. So the command and its output look like below:
 
 ```
-[ec2-user@ansible-server test_ansible]# ansible -i hosts all -m copy -a "src=/home/ec2-user/test_ansible/testfile dest=/tmp/testfile"
+[ubuntu@ansible-server test_ansible]# ansible -i hosts all -m copy -u ubuntu --become-user=root -a "src=/home/ubuntu/testfile dest=/tmp/testfile"
 ```
 
 ```
@@ -177,7 +177,7 @@ host1 | SUCCESS => {
     "mode": "0644",
     "owner": "root",
     "size": 0,
-    "src": "/home/ec2-user/.ansible/tmp/ansible-tmp-1562216392.43-256741011164877/source",
+    "src": "/home/ubuntu/.ansible/tmp/ansible-tmp-1562216392.43-256741011164877/source",
     "state": "file",
     "uid": 0
 }
@@ -191,7 +191,7 @@ host2 | SUCCESS => {
     "mode": "0644",
     "owner": "root",
     "size": 0,
-    "src": "/home/ec2-user/.ansible/tmp/ansible-tmp-1562216392.6-280302911361278/source",
+    "src": "/home/ubuntu/.ansible/tmp/ansible-tmp-1562216392.6-280302911361278/source",
     "state": "file",
     "uid": 0
 }
@@ -206,13 +206,30 @@ Explanation:
 2.  Module arguments, in this case, are source absolute path and destination absolute path.
 3.  Ansible command output reflecting the success of the copy command and other details like the sha1 or md5 checksums for file integrity check and metadata like owner, size, or permissions.
 
-    It is effortless to have a package installed on a bunch of servers. Ansible has several modules that interact with used installers, like yum, apt, dnf, etc.
 
-
-In the next example, you will find out how to install a package via the yum module on two Centos hosts.
+## Example Adhoc Commands in Ansible
 
 ```
-[ec2-user@ansible-server test_ansible]# ansible -i hosts all -m yum -a 'name=ncdu state=present'
+ansible all -i inventory-file -l inventory-group -m shell -u username --become-user=root -b -a 'date; apt-get install ntp -y ; service ntp stop ; sudo ntpd -gq ; service ntp start; date'
+```
+
+```
+ansible all -i inventory-file -l inventory-group -m copy -u admin --become-user=root -b -a 'src=/etc/httpd/conf/httpd.conf dest=/tmp/httpd.conf.backup'
+```
+
+```
+ansible all -i inventory-file -l inventory-group -m shell -u username --become-user=root -b -a 'ls -ltr'
+```
+
+
+
+
+    It is effortless to have a package installed on a bunch of servers. Ansible has several modules that interact with used installers, like yum, apt, dnf, etc.
+
+In the next example, you will find out how to install a package via the apt module on two CentOS hosts.
+
+```
+[centos@ansible-server]# ansible -i hosts all -m yum -u centos --become-user=root -a 'name=ncdu state=present'
 ```
 
 ```
@@ -242,7 +259,7 @@ host2 | SUCCESS => {
 
 Explanation:
 
-1.  Yum module is used in this example
+1.  yum module is used in this example
 2.  - It defines the module arguments, and in this case, you will choose the name of the package and its state. If the state is absent, for example, the package will be searched and if found, removed
 3.  When colored in yellow, you will see the output of the ansible command with the state changed, meaning in this case, that the package was found and installed.
 4.  Status of the yum install command issued via ansible. In this case the package ncdu.x86_64 0:1.14-1.el7 was installed.
@@ -252,7 +269,7 @@ Of course, all of the yum installer options can be used via ansible, including u
 In the below example the same command was issued to remove the previously installed ncdu package.
 
 ```
-[ec2-user@ansible-server test_ansible]# ansible -i hosts all -m yum -a 'name=ncdu state=absent'
+[centos@ansible-server]# ansible -i hosts all -m yum -a 'name=ncdu state=absent'
 ```
 
 ```
@@ -425,7 +442,7 @@ When dealing with extensive playbooks, it is easier to split the tasks into role
 
 Roles are stored in separate directories and have a particular directory structure.
 ```
-[ec2-user@ansible-server test2]# tree
+[ubuntu@ansible-server test2]# tree
 .
 `-- role1
     |-- defaults
@@ -456,7 +473,7 @@ The vars directory contains the yaml file in which all the variables used by the
 To create the directory tree for a role, you should use the following command with the last parameter, the role name:
 
 ```
-[ec2-user@ansible-server test2]# ansible-galaxy init role1
+[ubuntu@ansible-server test2]# ansible-galaxy init role1
 ```
 
 Ansible also works well with templates. As a language for templating, it uses Jinja2.
@@ -504,7 +521,7 @@ In this section, we will analyze a Case study of an essential ansible playbook t
 
 Below is the directory structure of the playbook. The Yaml file that will be used will be p4.yml.
 ```
-[ec2-user@ansible-server test_ansible]# ls -lrth
+[ubuntu@ansible-server test_ansible]# ls -lrth
 total 16K
 -rw-r--r--. 1 root root   0 Jul  3 10:13 testfile
 -rw-r--r--. 1 root root 203 Jul  3 13:30 p1.yml
@@ -512,8 +529,8 @@ total 16K
 -rw-r--r--. 1 root root 488 Jul  3 16:40 p2.yml
 -rw-r--r--. 1 root root 188 Jul  4 17:33 p4.yml
 drwxr-xr-x. 5 root root  47 Jul  4 17:35 roles
-[ec2-user@ansible-server test_ansible]# cd roles
-[ec2-user@ansible-server roles]# ls -lrth
+[ubuntu@ansible-server test_ansible]# cd roles
+[ubuntu@ansible-server roles]# ls -lrth
 total 12K
 drwxr-xr-x. 9 root root 4.0K Jul  4 12:52 httpd
 drwxr-xr-x. 9 root root 4.0K Jul  4 13:55 selinux
@@ -566,24 +583,12 @@ Explanation:
 
 
 
-## Example Adhoc Commands in Ansible
-
-```
-ansible all -i inventory-file -l inventory-group -m shell -u username --become-user=root -b -a 'date; apt-get install ntp -y ; service ntp stop ; sudo ntpd -gq ; service ntp start; date'
-```
-
-```
-ansible all -i inventory-file -l inventory-group -m copy -u admin --become-user=root -b -a 'src=/etc/httpd/conf/httpd.conf dest=/tmp/httpd.conf.backup'
-```
-
-```
-ansible all -i inventory-file -l inventory-group -m shell -u username --become-user=root -b -a 'service httpd restart ; service httpd status'
-```
 
 
 
 ## Example Playbooks in Ansible
 
+- [Deploying a Laravel Website using Ansible on LEMP Stack](https://github.com/do-community/ansible-laravel-demo)
 - [Setting Netdata Monitoring Application](https://github.com/BINPIPE/ansible-netdata)
 - [Setting a LAMP Stack & Installing Wordpress](https://www.digitalocean.com/community/tutorials/how-to-use-ansible-to-install-and-set-up-wordpress-with-lamp-on-ubuntu-18-04)  
   * Steps: [Deploy LAMP Stack & Install Wordpress on Ubuntu](https://www.digitalocean.com/community/tutorials/how-to-use-ansible-to-install-and-set-up-wordpress-with-lamp-on-ubuntu-18-04)  
