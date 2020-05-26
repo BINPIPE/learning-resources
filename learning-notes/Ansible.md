@@ -76,11 +76,11 @@ Once you have compared and weighed your options and decided to go for Ansible, t
 
 **Step 1)**  Install EPEL repo
 ```
-[root@ansible-server ~]# sudo yum install epel-release
+[ec2-user@ansible-server ~]# sudo yum install epel-release
 ```
 **Step 2)** Install ansible package
 ```
-[root@ansible-server ~]# sudo  yum install -y ansible
+[ec2-user@ansible-server ~]# sudo  yum install -y ansible
 ```
 [![](https://github.com/BINPIPE/learning-resources/blob/master/learning-notes/images/070919_1256_AnsibleTuto1.png)](https://github.com/BINPIPE/learning-resources/blob/master/learning-notes/images/070919_1256_AnsibleTuto1.png)
 
@@ -113,7 +113,7 @@ For this tutorial, a simple two servers hosts file will be configured, containin
 You can make sure that the hosts are accessible from the ansible server by issuing a ping command on all hosts.
 
 ```
-[root@ansible-server test_ansible]# ansible -i hosts all -m ping
+[ec2-user@ansible-server test_ansible]# ansible -i hosts all -m ping
 ```
 
 ```
@@ -141,7 +141,7 @@ Explanation:
 You can issue the same command only on a specific host if needed.
 
 ```
-[root@ansible-server test_ansible]# ansible -i hosts all -m ping --limit host2
+[ec2-user@ansible-server test_ansible]# ansible -i hosts all -m ping --limit host2
 ```
 
 ```
@@ -163,7 +163,7 @@ Explanation:
 If you need to copy a file to multiple destinations rapidly, you can use the copy module in ansible which uses SCP. So the command and its output look like below:
 
 ```
-[root@ansible-server test_ansible]# ansible -i hosts all -m copy -a "src=/root/test_ansible/testfile dest=/tmp/testfile"
+[ec2-user@ansible-server test_ansible]# ansible -i hosts all -m copy -a "src=/home/ec2-user/test_ansible/testfile dest=/tmp/testfile"
 ```
 
 ```
@@ -177,7 +177,7 @@ host1 | SUCCESS => {
     "mode": "0644",
     "owner": "root",
     "size": 0,
-    "src": "/root/.ansible/tmp/ansible-tmp-1562216392.43-256741011164877/source",
+    "src": "/home/ec2-user/.ansible/tmp/ansible-tmp-1562216392.43-256741011164877/source",
     "state": "file",
     "uid": 0
 }
@@ -191,7 +191,7 @@ host2 | SUCCESS => {
     "mode": "0644",
     "owner": "root",
     "size": 0,
-    "src": "/root/.ansible/tmp/ansible-tmp-1562216392.6-280302911361278/source",
+    "src": "/home/ec2-user/.ansible/tmp/ansible-tmp-1562216392.6-280302911361278/source",
     "state": "file",
     "uid": 0
 }
@@ -212,7 +212,7 @@ Explanation:
 In the next example, you will find out how to install a package via the yum module on two Centos hosts.
 
 ```
-[root@ansible-server test_ansible]# ansible -i hosts all -m yum -a 'name=ncdu state=present'
+[ec2-user@ansible-server test_ansible]# ansible -i hosts all -m yum -a 'name=ncdu state=present'
 ```
 
 ```
@@ -252,7 +252,7 @@ Of course, all of the yum installer options can be used via ansible, including u
 In the below example the same command was issued to remove the previously installed ncdu package.
 
 ```
-[root@ansible-server test_ansible]# ansible -i hosts all -m yum -a 'name=ncdu state=absent'
+[ec2-user@ansible-server test_ansible]# ansible -i hosts all -m yum -a 'name=ncdu state=absent'
 ```
 
 ```
@@ -425,7 +425,7 @@ When dealing with extensive playbooks, it is easier to split the tasks into role
 
 Roles are stored in separate directories and have a particular directory structure.
 ```
-[root@ansible-server test2]# tree
+[ec2-user@ansible-server test2]# tree
 .
 `-- role1
     |-- defaults
@@ -456,7 +456,7 @@ The vars directory contains the yaml file in which all the variables used by the
 To create the directory tree for a role, you should use the following command with the last parameter, the role name:
 
 ```
-[root@ansible-server test2]# ansible-galaxy init role1
+[ec2-user@ansible-server test2]# ansible-galaxy init role1
 ```
 
 Ansible also works well with templates. As a language for templating, it uses Jinja2.
@@ -504,7 +504,7 @@ In this section, we will analyze a Case study of an essential ansible playbook t
 
 Below is the directory structure of the playbook. The Yaml file that will be used will be p4.yml.
 ```
-[root@ansible-server test_ansible]# ls -lrth
+[ec2-user@ansible-server test_ansible]# ls -lrth
 total 16K
 -rw-r--r--. 1 root root   0 Jul  3 10:13 testfile
 -rw-r--r--. 1 root root 203 Jul  3 13:30 p1.yml
@@ -512,8 +512,8 @@ total 16K
 -rw-r--r--. 1 root root 488 Jul  3 16:40 p2.yml
 -rw-r--r--. 1 root root 188 Jul  4 17:33 p4.yml
 drwxr-xr-x. 5 root root  47 Jul  4 17:35 roles
-[root@ansible-server test_ansible]# cd roles
-[root@ansible-server roles]# ls -lrth
+[ec2-user@ansible-server test_ansible]# cd roles
+[ec2-user@ansible-server roles]# ls -lrth
 total 12K
 drwxr-xr-x. 9 root root 4.0K Jul  4 12:52 httpd
 drwxr-xr-x. 9 root root 4.0K Jul  4 13:55 selinux
