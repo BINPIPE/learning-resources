@@ -8,7 +8,7 @@
 
 Curated List of Learning Resources
 --- |
-<mark>:ledger:[Lesson Plans & Vids](https://github.com/BINPIPE/resources/blob/master/devops-lesson-plans.md)</mark>
+<mark>:ledger:[Lesson Plans & Videos - DevOps](https://github.com/BINPIPE/resources/blob/master/devops-lesson-plans.md)</mark>
 [DevOps](https://github.com/BINPIPE/resources/blob/master/devops.md)
 [SRE](https://github.com/BINPIPE/resources/blob/master/sre.md)
 [Certification Exams](https://github.com/BINPIPE/resources/blob/master/certifications.md)
