@@ -597,10 +597,10 @@ Explanation:
 
 ## Example Playbooks in Ansible
 
-- [Deploying a Laravel Website using Ansible on LEMP Stack](https://github.com/do-community/ansible-laravel-demo)
+- [Deploying a Laravel Website using Ansible on LEMP Stack](https://github.com/BINPIPE/ansible-laravel-demo)
 - [Setting Netdata Monitoring Application](https://github.com/BINPIPE/ansible-netdata)
-- [Setting a LAMP Stack & Installing Wordpress](https://www.digitalocean.com/community/tutorials/how-to-use-ansible-to-install-and-set-up-wordpress-with-lamp-on-ubuntu-18-04)  
-  * Steps: [Deploy LAMP Stack & Install Wordpress on Ubuntu](https://www.digitalocean.com/community/tutorials/how-to-use-ansible-to-install-and-set-up-wordpress-with-lamp-on-ubuntu-18-04)  
+- [Setting a LAMP Stack & Installing Wordpress](https://www.digitalocean.com/community/tutorials/how-to-use-ansible-to-install-and-set-up-wordpress-with-lamp-on-ubuntu-18-04)
+  * Steps: [Deploy LAMP Stack & Install Wordpress on Ubuntu](https://www.digitalocean.com/community/tutorials/how-to-use-ansible-to-install-and-set-up-wordpress-with-lamp-on-ubuntu-18-04)
   * Repository: [https://github.com/do-community/ansible-playbooks](https://github.com/do-community/ansible-playbooks)
 
 
