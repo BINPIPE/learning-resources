@@ -33,6 +33,19 @@ All the repository structure is internal to Git and are transparent to developer
 
 **Common GIT Operations**
 
+
+| Category | To perform this task | Use this command |
+| --- | --- | --- |
+| Repository management | Create a Git repository | `git init` |
+|  | Download a remote repository | `git clone` |
+| Branch | Create a branch | `git checkout` |
+| Stage and commit changes | See which files have been changed | `git status` |
+|  | Stage files to commit | `git add` |
+|  | Commit files to your branch | `git commit` |
+| Remote synchronization | Download a branch from a remote repository | `git pull` |
+|  | Upload a branch to a remote repository | `git push` |
+
+
 ## **checkout a repository from github**
 
 Create a working copy of a local repository by running the command  
@@ -185,6 +198,8 @@ If you access github by ssh you don’t need to type your username and password 
     ssh -T git@github.com -> activate ssh key (test connection)
 
 Refresh your github Page after doing the above.
+
+
 
 <pre>
 <a href="https://www.binpipe.org">BINPIPE</a> aims to simplify learning for those who are looking to make a foothold in the industry. 
