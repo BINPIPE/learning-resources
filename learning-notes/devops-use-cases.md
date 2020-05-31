@@ -9,8 +9,13 @@ DevOps Use-Cases &  Real-World Scenarios
 
 
 <hr>
-**Scenario-1**
+
+```diff
+- Scenario-1
+```
+
 <hr>
+
 There is a Static Website for a company. And this website needs to be deployed using automated CI/CD on Amazon Cloud Servers.
 
 So basically the following has to be done:
