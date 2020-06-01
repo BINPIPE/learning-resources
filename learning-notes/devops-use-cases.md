@@ -8,7 +8,7 @@ DevOps Use-Cases &  Real-World Scenarios
 [![BINPIPE](https://img.shields.io/badge/Live--Classroom-blue)](https://forms.gle/tDJxDyj2nJyfsgsk7)
 
 ```diff
-- Scenario-1
+- SCENARIO-1
 ```
 
 There is a Static Website for a company. And this website needs to be deployed using automated CI/CD on Amazon Cloud Servers.
