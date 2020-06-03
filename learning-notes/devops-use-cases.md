@@ -54,7 +54,8 @@ To make sure you can do both, we give you this home assignment. Please create a 
 ```diff
 - ASSIGNMENT-3
 ```
-[Complete this Assignment from DensityCo](https://github.com/DensityCo/devops-homework)
+[Complete this Assignment from DensityCo](https://github.com/DensityCo/devops-homework)  
+
 Note- To keep things simple. Use Docker-Compose as the container Orchestration Framework.
 
 <hr>
@@ -63,7 +64,8 @@ Note- To keep things simple. Use Docker-Compose as the container Orchestration F
 ```diff
 - ASSIGNMENT-4
 ```
-[Complete this Assignment from eHealthAfrica](https://github.com/eHealthAfrica/devops-technical-test)
+[Complete this Assignment from eHealthAfrica](https://github.com/eHealthAfrica/devops-technical-test)  
+
 
 <hr>
 
@@ -71,15 +73,18 @@ Note- To keep things simple. Use Docker-Compose as the container Orchestration F
 ```diff
 - ASSIGNMENT-5
 ```
-[Complete this Assignment from ViriCiti](https://github.com/viriciti/devops-assignment)
+[Complete this Assignment from ViriCiti](https://github.com/viriciti/devops-assignment)  
+
 
 <hr>
 
 ```diff
 - ASSIGNMENT-6
 ```
-[Complete this Assignment from Barclaycard US](http://bcustech.github.io/devops-test/)
+[Complete this Assignment from Barclaycard US](http://bcustech.github.io/devops-test/)  
 
+
+<hr>
 
 ```diff
 - ASSIGNMENT-7
@@ -88,6 +93,8 @@ Note- To keep things simple. Use Docker-Compose as the container Orchestration F
 
 Create 2 EC2 or VirtualBox instances and then follow the above link to install Nagios on one of them and then monitor the other server. 
 You can use a Docker version of Nagios if you want, but then you will be on your own and would not need to follow the above link!
+
+<hr>
 
 <pre>
 <a href="https://www.binpipe.org">BINPIPE</a> aims to simplify learning for those who are looking to make a foothold in the industry. 
