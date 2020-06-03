@@ -96,6 +96,30 @@ You can use a Docker version of Nagios if you want, but then you will be on your
 
 <hr>
 
+
+```diff
+- ASSIGNMENT-8
+```
+Declarative Pipeline:
+1. Create a Jenkins installation with pipeline plugins installed. (You can install it in your laptop, use a VirtualBox or Docker)
+2. Create a public repo with some sample java code in Github
+3. Add a dummy pipeline with stages that pull code from the above repo and build them.
+4. The pipeline should have dummy stages like pull, build, test and deploy.
+
+You can read more about declarative pipelines here: https://jenkins.io/doc/book/pipeline/syntax/
+
+<hr>
+
+
+```diff
+- ASSIGNMENT-9
+```
+Ansible Installer:
+1. Write an Ansible playbook to install ELK on Linux (Centos or Ubuntu)
+2. This playbook should preferably follow the Ansible Good Practices Directory layout discussed here- https://docs.ansible.com/ansible/latest/user_guide/playbooks_best_practices.html
+
+<hr>
+
 <pre>
 <a href="https://www.binpipe.org">BINPIPE</a> aims to simplify learning for those who are looking to make a foothold in the industry. 
 Write to me at <b>nixgurus@gmail.com</b> if you are looking for tailor-made training sessions. 
