@@ -84,7 +84,8 @@ Note- To keep things simple. Use Docker-Compose as the container Orchestration F
 ```diff
 - ASSIGNMENT-7
 ```
-[Install Nagios on Ubuntu](https://www.digitalocean.com/community/tutorials/how-to-install-nagios-4-and-monitor-your-servers-on-ubuntu-18-04)
+[Install Nagios on Ubuntu](https://www.digitalocean.com/community/tutorials/how-to-install-nagios-4-and-monitor-your-servers-on-ubuntu-18-04)  
+
 Create 2 EC2 or VirtualBox instances and then follow the above link to install Nagios on one of them and then monitor the other server. 
 You can use a Docker version of Nagios if you want, but then you will be on your own and would not need to follow the above link!
 
