@@ -17,6 +17,7 @@ Curated List of Learning Resources
 [Engineering-Management](https://github.com/BINPIPE/resources/blob/master/management.md)
 [Books](https://github.com/BINPIPE/resources/blob/master/books.md)
 [All-Else!](https://github.com/BINPIPE/resources/blob/master/all-else.md)
+[Interview QnAs](https://github.com/BINPIPE/devops-sre-interview-prep)
 
 <pre>
 <a href="https://www.binpipe.org">BINPIPE</a> aims to simplify learning for those who are looking to make a foothold in the industry. 
