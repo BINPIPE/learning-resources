@@ -106,6 +106,12 @@
 * Your UNIX Linux - The Ultimate Guide - Third Edition [[Download]](https://github.com/prasanjit-/Free-DevOps-Books-1/blob/master/book/Your%20UNIX%20Linux%20-%20The%20Ultimate%20Guide%20-%20Third%20Edition.pdf)
 ---
 
+
+**Book Repos on Various Subjects (PDFs)**
+[http://dl.booktolearn.com/ebooks2/](http://dl.booktolearn.com/ebooks2/)
+
+
+
 **The Elements of Statistical Learning**
 
 Trevor Hastie, Robert Tibshirani, Jerome Friedman
