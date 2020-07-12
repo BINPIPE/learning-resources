@@ -39,4 +39,4 @@ The views and opinions expressed in the media, articles or comments on this site
 The editorial staff of BINPIPE oversees and governs the site based on our editorial policy but should not be liable for all of the information found on this web site.
 
 Image Content Removal
-If you wish to use copyrighted materials from this site for the reasons that go beyond the “fair use” policy, you need to obtain permission from the copyright owner. If you have concerns regarding copyright infringements or materials that does not comply with fair use as outlined, please mail us at nixgurus@gmail.com and we will immediately take off the material.
+If you wish to use copyrighted materials from this site for the reasons that go beyond the “fair use” policy, you need to obtain permission from the copyright owner. If you have concerns regarding copyright infringements or materials that does not comply with fair use as outlined, please mail us at learn@binpipe.org and we will immediately take off the material.
