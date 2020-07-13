@@ -68,7 +68,7 @@ sudo systemctl start docker
 ```
 
 
-Follow the `Jenkins-CI/CD Pipelines` video at [youtube.binpipe.org](http://youtube.binpipe.org) for a complete run-through of the following use cases:
+Follow the `Jenkins-CI/CD Pipelines` video at [youtube.binpipe.org](https://youtube.binpipe.org) for a complete run-through of the following use cases:
 
 - **Freestyle CI/CD Pipeline Job on Jenkins** //Static-Website HTML/CSS  
 source-code: https://github.com/BINPIPE/static-site-docker.git
