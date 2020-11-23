@@ -10,9 +10,12 @@ Simplified resources for learning DevOps methodically.
 Lesson Plans
 ------------
 
+ [![BINPIPE](https://img.shields.io/badge/Watch--the--Videos-orange)](https://www.youtube.com/playlist?list=PLSo0pjml8Hm-_wolCCFxJ4tkT10uBtSjy)  [![BINPIPE](https://img.shields.io/badge/Read--up--Notes-black)](https://github.com/BINPIPE/learning-resources/blob/master/learning-notes/devops-introduction.md)
+
+
 &#x1F4D7; **DevOps Foundations**
 
-* Lecture 01 - Introduction to DevOps Fundamentals  [![BINPIPE](https://img.shields.io/badge/Watch--the--Video-orange)](https://www.youtube.com/channel/UCPTgt4Wo0MAnuzNEEZlk90A)  [![BINPIPE](https://img.shields.io/badge/Read--up--Notes-black)](https://github.com/BINPIPE/learning-resources/blob/master/learning-notes/devops-introduction.md)
+* Lecture 01 - Introduction to DevOps Fundamentals 
 * Lecture 02 - DevOps Practices
 * Lecture 03 - Version Control Systems
 * Lecture 04 - Jenkins Fundamentals
