@@ -177,7 +177,7 @@ We'll discuss their usage a little more in the next section (Input).
 
 **Other Special Variables**
 There are a few other variables that the system sets for you to use as well.
-
+```
 *$0 - The name of the Bash script.
 $1 - $9 - The first 9 arguments to the Bash script. (As mentioned above.)
 $# - How many arguments were passed to the Bash script.
@@ -189,7 +189,7 @@ $HOSTNAME - The hostname of the machine the script is running on.
 $SECONDS - The number of seconds since the script was started.
 $RANDOM - Returns a different random number each time is it referred to.
 $LINENO - Returns the current line number in the Bash script.*
-
+```
 **Setting Our Own Variables**
 As well as variables that are preset by the system, we may also set our own variables. This can be useful for keeping track of results of commands and being able to refer to and process them later.
 
