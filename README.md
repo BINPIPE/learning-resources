@@ -18,6 +18,9 @@ Curated List of Learning Resources
 [Books](https://github.com/BINPIPE/resources/blob/master/books.md)
 [All-Else!](https://github.com/BINPIPE/resources/blob/master/all-else.md)
 [Interview Preparation](https://github.com/BINPIPE/devops-sre-interview-prep)
+[AWS Solutions Architecture](https://github.com/BINPIPE/learn-aws)
+[Azure Solutions Architecture](https://github.com/BINPIPE/learn-azure)
+[Google Cloud Solutions Architecture](https://github.com/BINPIPE/learn-gcp)
 
 <pre>
 <a href="https://www.binpipe.org">BINPIPE</a> aims to simplify learning for those who are looking to make a foothold in the industry. 
