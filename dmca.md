@@ -1,7 +1,7 @@
 
 **Digital Millennium Copyright Act (DMCA) Notice**
 
-BINPIPE values intellectual property and follows a policy to address infringement claims in accordance with the Digital Millennium Copyright Act (DMCA). DMCA provides copyright owners a process in notifying online service providers regarding copyright infringement.
+This repo values intellectual property and follows a policy to address infringement claims in accordance with the Digital Millennium Copyright Act (DMCA). DMCA provides copyright owners a process in notifying online service providers regarding copyright infringement.
 
 If you have concerns on the materials and contents available in BINPIPE that violate your copyright, please provide us a valid and complete DMCA notice for proper actions. Under the terms of DMCA, BINPIPE will respond to notices in legal circumstances and avail the protection under the Act. BINPIPE will take out the infringed material and take plausible steps to contact the user who use your property.
 
@@ -39,4 +39,4 @@ The views and opinions expressed in the media, articles or comments on this site
 The editorial staff of BINPIPE oversees and governs the site based on our editorial policy but should not be liable for all of the information found on this web site.
 
 Image Content Removal
-If you wish to use copyrighted materials from this site for the reasons that go beyond the “fair use” policy, you need to obtain permission from the copyright owner. If you have concerns regarding copyright infringements or materials that does not comply with fair use as outlined, please mail us at learn@binpipe.org and we will immediately take off the material.
+If you wish to use copyrighted materials from this site for the reasons that go beyond the “fair use” policy, you need to obtain permission from the copyright owner. If you have concerns regarding copyright infringements or materials that does not comply with fair use as outlined, please mail us at prasanjit.cce 'at' gmail.com and we will immediately take off the material.
